@@ -241,6 +241,12 @@
     <tablespaces xmi:id="_kt21wFQ6Eei8j8QXN5oLpg" name="TS2" dsSize="4" maximumRows="255" tables="_mctkQFQ6Eei8j8QXN5oLpg">
       <partitions xmi:id="_kt88YFQ6Eei8j8QXN5oLpg" primaryQuantity="-1" secondaryQuantity="-1" trackMod="true" pctFree="5"/>
     </tablespaces>
+    <tablespaces xmi:id="_o8vewFQ_EeicxPQ5Tdf_IA" name="ts3" dsSize="4" maximumRows="255" tables="_nnh0wFQ-EeicxPQ5Tdf_IA">
+      <partitions xmi:id="_o82McFQ_EeicxPQ5Tdf_IA" primaryQuantity="-1" secondaryQuantity="-1" trackMod="true" pctFree="5"/>
+    </tablespaces>
+    <tablespaces xmi:id="_p8LigFQ_EeicxPQ5Tdf_IA" name="ts4" dsSize="4" maximumRows="255" tables="_ugmlYFQ-EeicxPQ5Tdf_IA">
+      <partitions xmi:id="_p8S3QFQ_EeicxPQ5Tdf_IA" primaryQuantity="-1" secondaryQuantity="-1" trackMod="true" pctFree="5"/>
+    </tablespaces>
   </zSeries:ZSeriesDatabaseInstance>
   <zSeries:ZSeriesTable xmi:id="_lluR4FQ6Eei8j8QXN5oLpg" name="Customer" schema="_dFyRIFQ6Eei8j8QXN5oLpg" referencingForeignKeys="_bUm8gFQ8EeicxPQ5Tdf_IA" dataCapture="CHANGES" tableSpace="_jYPGoFQ6Eei8j8QXN5oLpg">
     <columns xsi:type="zSeries:ZSeriesColumn" xmi:id="_r0pSQFQ6Eei8j8QXN5oLpg" name="Cust_No" nullable="false" defaultValue="">
@@ -272,7 +278,7 @@
       </eAnnotations>
     </constraints>
   </zSeries:ZSeriesTable>
-  <zSeries:ZSeriesTable xmi:id="_nnh0wFQ-EeicxPQ5Tdf_IA" name="Order_item" schema="_dFyRIFQ6Eei8j8QXN5oLpg">
+  <zSeries:ZSeriesTable xmi:id="_nnh0wFQ-EeicxPQ5Tdf_IA" name="Order_item" schema="_dFyRIFQ6Eei8j8QXN5oLpg" tableSpace="_o8vewFQ_EeicxPQ5Tdf_IA">
     <columns xsi:type="zSeries:ZSeriesColumn" xmi:id="_pg2t4FQ-EeicxPQ5Tdf_IA" name="Order_Item_No" nullable="false">
       <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_rAG6IFQ-EeicxPQ5Tdf_IA" name="SMALLINT" primitiveType="SMALLINT"/>
     </columns>
@@ -305,7 +311,7 @@
       </eAnnotations>
     </constraints>
   </zSeries:ZSeriesTable>
-  <zSeries:ZSeriesTable xmi:id="_ugmlYFQ-EeicxPQ5Tdf_IA" name="Product" schema="_dFyRIFQ6Eei8j8QXN5oLpg" referencingForeignKeys="_zXyWwFQ-EeicxPQ5Tdf_IA">
+  <zSeries:ZSeriesTable xmi:id="_ugmlYFQ-EeicxPQ5Tdf_IA" name="Product" schema="_dFyRIFQ6Eei8j8QXN5oLpg" referencingForeignKeys="_zXyWwFQ-EeicxPQ5Tdf_IA" tableSpace="_p8LigFQ_EeicxPQ5Tdf_IA">
     <columns xsi:type="zSeries:ZSeriesColumn" xmi:id="_vlM18FQ-EeicxPQ5Tdf_IA" name="Product_No" nullable="false">
       <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_xTKMkFQ-EeicxPQ5Tdf_IA" name="SMALLINT" primitiveType="SMALLINT"/>
     </columns>
