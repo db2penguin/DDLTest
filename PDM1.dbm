@@ -118,6 +118,9 @@
             <styles xsi:type="datanotation:DataListCompartmentStyle" xmi:id="_4JRv11Q-EeicxPQ5Tdf_IA" sortingKeys="Natural:Ascending"/>
           </children>
           <children xmi:id="_4JRv2FQ-EeicxPQ5Tdf_IA" visible="false" type="Column.Compartment">
+            <children xsi:type="notation:Shape" xmi:id="_BvRu0FRBEeicxPQ5Tdf_IA" type="Column" element="_2N1E4FRAEeicxPQ5Tdf_IA" fontName="Segoe UI">
+              <layoutConstraint xsi:type="notation:Bounds" xmi:id="_BvRu0VRBEeicxPQ5Tdf_IA"/>
+            </children>
             <styles xsi:type="datanotation:DataListCompartmentStyle" xmi:id="_4JRv2VQ-EeicxPQ5Tdf_IA" sortingKeys="Natural:Ascending"/>
           </children>
           <children xmi:id="_4JRv2lQ-EeicxPQ5Tdf_IA" visible="false" type="Index.Compartment">
@@ -314,6 +317,9 @@
   <zSeries:ZSeriesTable xmi:id="_ugmlYFQ-EeicxPQ5Tdf_IA" name="Product" schema="_dFyRIFQ6Eei8j8QXN5oLpg" referencingForeignKeys="_zXyWwFQ-EeicxPQ5Tdf_IA" tableSpace="_p8LigFQ_EeicxPQ5Tdf_IA">
     <columns xsi:type="zSeries:ZSeriesColumn" xmi:id="_vlM18FQ-EeicxPQ5Tdf_IA" name="Product_No" nullable="false">
       <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_xTKMkFQ-EeicxPQ5Tdf_IA" name="SMALLINT" primitiveType="SMALLINT"/>
+    </columns>
+    <columns xsi:type="zSeries:ZSeriesColumn" xmi:id="_2N1E4FRAEeicxPQ5Tdf_IA" name="Product_Name">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_2N1E4VRAEeicxPQ5Tdf_IA" name="CHAR" length="5"/>
     </columns>
     <constraints xsi:type="SQLConstraints:PrimaryKey" xmi:id="_xhzFgFQ-EeicxPQ5Tdf_IA" name="Product_PK" members="_vlM18FQ-EeicxPQ5Tdf_IA" ForeignKey="_zXyWwFQ-EeicxPQ5Tdf_IA"/>
   </zSeries:ZSeriesTable>
