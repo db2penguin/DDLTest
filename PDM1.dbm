@@ -333,5 +333,8 @@
     <columns xsi:type="zSeries:ZSeriesColumn" xmi:id="_KxtO8F0QEeiAw5_1WWoYwA" name="Column4">
       <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_KxtO8V0QEeiAw5_1WWoYwA" name="CHAR" length="5"/>
     </columns>
+    <columns xsi:type="zSeries:ZSeriesColumn" xmi:id="_gxzPwF0VEeiAw5_1WWoYwA" name="Column5">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_gxzPwV0VEeiAw5_1WWoYwA" name="CHAR" length="5"/>
+    </columns>
   </zSeries:ZSeriesTable>
 </xmi:XMI>
