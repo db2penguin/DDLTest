@@ -2,7 +2,7 @@
 <!--xtools2_universal_type_manager-->
 <xmi:XMI xmlns:datamodelversion="http://www.ibm.com/com.ibm.datatools.core/model/data/1.9.0.0" xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:DB2Model="http:///com/ibm/db/models/db2/db2.ecore" xmlns:SQLConstraints="http:///org/eclipse/datatools/modelbase/sql/constraints.ecore" xmlns:SQLDataTypes="http:///org/eclipse/datatools/modelbase/sql/datatypes.ecore" xmlns:datanotation="http:///datanotation.ecore" xmlns:ilvglnotation="http://www.ilog.com/views/8.5.0/LayoutNotationExtensionDefinition" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:zSeries="http:///com/ibm/db/models/db2/zSeries.ecore">
   <zSeries:ZSeriesDatabase xmi:id="_c-TwIFQ6Eei8j8QXN5oLpg" name="Location" vendor="DB2 UDB zSeries" version="V12 (New Function Activated)" schemas="_dFyRIFQ6Eei8j8QXN5oLpg" databaseInstances="_iEe_wFQ6Eei8j8QXN5oLpg"/>
-  <DB2Model:DB2Schema xmi:id="_dFyRIFQ6Eei8j8QXN5oLpg" name="Schema" tables="_lluR4FQ6Eei8j8QXN5oLpg _mctkQFQ6Eei8j8QXN5oLpg _nnh0wFQ-EeicxPQ5Tdf_IA _ugmlYFQ-EeicxPQ5Tdf_IA _7oLhgF0DEeiAw5_1WWoYwA" database="_c-TwIFQ6Eei8j8QXN5oLpg">
+  <DB2Model:DB2Schema xmi:id="_dFyRIFQ6Eei8j8QXN5oLpg" name="Schema" tables="_lluR4FQ6Eei8j8QXN5oLpg _mctkQFQ6Eei8j8QXN5oLpg _nnh0wFQ-EeicxPQ5Tdf_IA _ugmlYFQ-EeicxPQ5Tdf_IA" database="_c-TwIFQ6Eei8j8QXN5oLpg">
     <eAnnotations xmi:id="_dHvY8FQ6Eei8j8QXN5oLpg" source="diagram">
       <contents xsi:type="datanotation:DataDiagram" xmi:id="_dHwnEFQ6Eei8j8QXN5oLpg" type="IE_CrowFoot" name="Diagram1" viewKind="ProjectExplorer" notation="IE_CrowFoot" kind="Physical">
         <styles xsi:type="datanotation:DataAttributeStyle" xmi:id="_dHxOIFQ6Eei8j8QXN5oLpg"/>
@@ -247,9 +247,6 @@
     <tablespaces xmi:id="_p8LigFQ_EeicxPQ5Tdf_IA" name="ts4" dsSize="4" maximumRows="255" tables="_ugmlYFQ-EeicxPQ5Tdf_IA">
       <partitions xmi:id="_p8S3QFQ_EeicxPQ5Tdf_IA" primaryQuantity="-1" secondaryQuantity="-1" trackMod="true" pctFree="5"/>
     </tablespaces>
-    <tablespaces xmi:id="_5ndm8F0DEeiAw5_1WWoYwA" name="TS5" dsSize="4" maximumRows="255" tables="_7oLhgF0DEeiAw5_1WWoYwA">
-      <partitions xmi:id="_5qynwF0DEeiAw5_1WWoYwA" primaryQuantity="-1" secondaryQuantity="-1" trackMod="true" pctFree="5"/>
-    </tablespaces>
   </zSeries:ZSeriesDatabaseInstance>
   <zSeries:ZSeriesTable xmi:id="_lluR4FQ6Eei8j8QXN5oLpg" name="Customer" schema="_dFyRIFQ6Eei8j8QXN5oLpg" referencingForeignKeys="_bUm8gFQ8EeicxPQ5Tdf_IA" dataCapture="CHANGES" tableSpace="_jYPGoFQ6Eei8j8QXN5oLpg">
     <columns xsi:type="zSeries:ZSeriesColumn" xmi:id="_r0pSQFQ6Eei8j8QXN5oLpg" name="Cust_No" nullable="false" defaultValue="">
@@ -319,10 +316,5 @@
       <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_xTKMkFQ-EeicxPQ5Tdf_IA" name="SMALLINT" primitiveType="SMALLINT"/>
     </columns>
     <constraints xsi:type="SQLConstraints:PrimaryKey" xmi:id="_xhzFgFQ-EeicxPQ5Tdf_IA" name="Product_PK" members="_vlM18FQ-EeicxPQ5Tdf_IA" ForeignKey="_zXyWwFQ-EeicxPQ5Tdf_IA"/>
-  </zSeries:ZSeriesTable>
-  <zSeries:ZSeriesTable xmi:id="_7oLhgF0DEeiAw5_1WWoYwA" name="Table1" schema="_dFyRIFQ6Eei8j8QXN5oLpg" tableSpace="_5ndm8F0DEeiAw5_1WWoYwA">
-    <columns xsi:type="zSeries:ZSeriesColumn" xmi:id="_9MudcF0DEeiAw5_1WWoYwA" name="Column1">
-      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_9MudcV0DEeiAw5_1WWoYwA" name="CHAR" length="5"/>
-    </columns>
   </zSeries:ZSeriesTable>
 </xmi:XMI>
