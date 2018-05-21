@@ -72,7 +72,8 @@ CREATE TABLE "Schema"."Product" (
 	CCSID EBCDIC;
 
 CREATE TABLE "Schema"."Table1" (
-		"Column1" CHAR(5)
+		"Column1" CHAR(5), 
+		"Column2" CHAR(5)
 	)
 	IN "DB1"."TS5"
 	AUDIT NONE
