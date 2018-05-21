@@ -103,14 +103,16 @@ CREATE UNIQUE INDEX "Schema"."Product_PK"
 	ON "Schema"."Product"
 	("Product_No");
 
-ALTER TABLE "Schema"."Customer" ADD CONSTRAINT "Customer_PK" PRIMARY KEY
+ALTER TABLE "Schema"."Customer" ADD CONSTRAINT "Customer_PK" PRIMARY 
+KEY
 	("Cust_No");
 
 ALTER TABLE "Schema"."Order" ADD CONSTRAINT "Order_PK" PRIMARY KEY
 	("Cust_No", 
 	 "Order_No");
 
-ALTER TABLE "Schema"."Order_item" ADD CONSTRAINT "Order_item_PK" PRIMARY KEY
+ALTER TABLE "Schema"."Order_item" ADD CONSTRAINT "Order_item_PK" 
+PRIMARY KEY
 	("Cust_No", 
 	 "Order_No", 
 	 "Product_No", 
@@ -119,13 +121,15 @@ ALTER TABLE "Schema"."Order_item" ADD CONSTRAINT "Order_item_PK" PRIMARY KEY
 ALTER TABLE "Schema"."Product" ADD CONSTRAINT "Product_PK" PRIMARY KEY
 	("Product_No");
 
-ALTER TABLE "Schema"."Order" ADD CONSTRAINT "Order_Customer_FK" FOREIGN KEY
+ALTER TABLE "Schema"."Order" ADD CONSTRAINT "Order_Customer_FK" 
+FOREIGN KEY
 	("Cust_No")
 	REFERENCES "Schema"."Customer"
 	("Cust_No")
 	ON DELETE CASCADE;
 
-ALTER TABLE "Schema"."Order_item" ADD CONSTRAINT "Order_item_Order_FK" FOREIGN KEY
+ALTER TABLE "Schema"."Order_item" ADD CONSTRAINT 
+"Order_item_Order_FK" FOREIGN KEY
 	("Cust_No", 
 	 "Order_No")
 	REFERENCES "Schema"."Order"
@@ -133,7 +137,8 @@ ALTER TABLE "Schema"."Order_item" ADD CONSTRAINT "Order_item_Order_FK" FOREIGN K
 	 "Order_No")
 	ON DELETE CASCADE;
 
-ALTER TABLE "Schema"."Order_item" ADD CONSTRAINT "Order_item_Product_FK" FOREIGN KEY
+ALTER TABLE "Schema"."Order_item" ADD CONSTRAINT 
+"Order_item_Product_FK" FOREIGN KEY
 	("Product_No")
 	REFERENCES "Schema"."Product"
 	("Product_No")
