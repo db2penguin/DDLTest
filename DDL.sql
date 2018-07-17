@@ -1,6 +1,7 @@
 --<ScriptOptions statementTerminator=";"/>
 
 
+
 CREATE DATABASE "DB1"
 	CCSID EBCDIC;
 
